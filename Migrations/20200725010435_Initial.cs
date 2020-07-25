@@ -2,7 +2,7 @@
 
 namespace AutomobileWebsite.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,7 @@ namespace AutomobileWebsite.Migrations
                 {
                     VehicleId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    VehicleIdNum = table.Column<int>(nullable: false),
+                    VehicleIdNum = table.Column<string>(nullable: true),
                     Make = table.Column<string>(nullable: true),
                     Model = table.Column<string>(nullable: true),
                     Year = table.Column<int>(nullable: false)

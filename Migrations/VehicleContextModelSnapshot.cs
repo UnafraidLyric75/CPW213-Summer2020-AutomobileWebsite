@@ -31,8 +31,8 @@ namespace AutomobileWebsite.Migrations
                     b.Property<string>("Model")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VehicleIdNum")
-                        .HasColumnType("int");
+                    b.Property<string>("VehicleIdNum")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");

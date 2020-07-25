@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Vehicle>
+@{ 
+    ViewData["Title"] = "Car Catalog";
+}
+
+<h1>Car Catalog</h1>
+
+@foreach(Vehicle v in Model)
+{
+    <p>@v.Model</p>
+}
