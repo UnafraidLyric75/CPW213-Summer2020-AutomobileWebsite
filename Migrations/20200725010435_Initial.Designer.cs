@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutomobileWebsite.Migrations
 {
     [DbContext(typeof(VehicleContext))]
-    [Migration("20200724234947_initial")]
-    partial class initial
+    [Migration("20200725010435_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,8 +33,8 @@ namespace AutomobileWebsite.Migrations
                     b.Property<string>("Model")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VehicleIdNum")
-                        .HasColumnType("int");
+                    b.Property<string>("VehicleIdNum")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");

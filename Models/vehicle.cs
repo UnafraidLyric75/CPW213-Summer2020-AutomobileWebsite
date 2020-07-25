@@ -14,7 +14,8 @@ namespace AutomobileWebsite.Models
         /// <summary>
         /// Is the VIN of the car
         /// </summary>
-        public int VehicleIdNum { get; set; }
+        [Display(Name ="VIN")]
+        public string VehicleIdNum { get; set; }
 
         /// <summary>
         /// Is the company the produce it

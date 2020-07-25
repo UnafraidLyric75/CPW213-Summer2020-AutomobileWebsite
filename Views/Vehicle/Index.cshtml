@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Vehicle>
+@{
+    ViewData["Title"] = "Car Catalog";
+}
+
+<h1>Car Catalog</h1>
+
+<div class="table-responsive">
+    <table class="table table-hover table-striped">
+        <thread>
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.VehicleIdNum)</th>
+                <th>@Html.DisplayNameFor(m => m.Make)</th>
+                <th>@Html.DisplayNameFor(m => m.Model)</th>
+                <th>@Html.DisplayNameFor(m => m.Year)</th>
+                <th></th>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach (Vehicle v in Model)
+            {
+            <tr>
+                <td>@v.VehicleIdNum</td>
+                <td>@v.Make</td>
+                <td>@v.Model</td>
+                <td>@v.Year</td>
+                <td>
+                    <a class="btn btn-secondary" href="">Edit</a>
+                    <a class="btn btn-danger" href="">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div> 
